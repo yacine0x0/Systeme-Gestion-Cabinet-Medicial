@@ -1,5 +1,5 @@
 package com.model;
 
-public class medicament {
+public class Medecin {
     
 }
