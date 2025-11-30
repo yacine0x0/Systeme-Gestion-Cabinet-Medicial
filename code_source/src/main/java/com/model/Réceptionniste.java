@@ -19,4 +19,38 @@ public class Réceptionniste extends Personne{
     public char getType_utilisateur() {
         return type_utilisateur;
     }
+
+    // ---- S'AUTHENTIFIER ---- //
+    public boolean sAuthentifier(String nom_utilisateur, String mot_de_passe){
+        //code d'authentification
+        return true;
+    }
+
+    // ------------- GESTION DES RENDEZ-VOUS ------------- //
+    
+    public void nouveauRendezVous(){
+        //code de creation de nouveau rendez-vous
+    }
+
+    public void supprimerRendezVous(){
+        //code de suppression de rendez-vous
+    }
+
+    public void modifierRendezVous(){
+        //code de modification de rendez-vous
+    }
+
+    public void afficherNbrRendezVous(){
+        //code d'affichage du nombre de rendez-vous
+    }
+
+    public void afficherListeRendezVous(){
+        //code d'affichage de la liste des rendez-vous
+    }
+
+    public void verifierDisponibiliteMedecin(){
+        //code de verification de disponibilite du medecin
+    }
+
+
 }
