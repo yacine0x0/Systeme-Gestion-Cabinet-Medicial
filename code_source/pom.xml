@@ -13,4 +13,13 @@
         <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
+<dependencies>
+    <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-j</artifactId>
+    <version>9.4.0</version>
+    </dependency>
+
+</dependencies>
+
 </project>
