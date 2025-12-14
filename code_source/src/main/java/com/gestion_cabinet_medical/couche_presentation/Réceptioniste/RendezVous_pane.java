@@ -1,14 +1,14 @@
-package com.gestion_cabinet_medical.couche_presentation;
+package com.gestion_cabinet_medical.couche_presentation.Réceptioniste;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class Facture_pane extends JTabbedPane{
-     private JPanel Affichage_patient,total_panel,ajout_patient,recherche_patient;
+public class RendezVous_pane extends JTabbedPane {
+        private JPanel Affichage_patient,total_panel,ajout_patient,recherche_patient;
      private JLabel Total_patient;
-    public Facture_pane(){
-
-            Affichage_patient = new JPanel();
+   
+    public RendezVous_pane(){
+        Affichage_patient = new JPanel();
         total_panel = new JPanel();
         ajout_patient = new JPanel();
         recherche_patient = new JPanel();
@@ -22,8 +22,9 @@ public class Facture_pane extends JTabbedPane{
         total_panel.add(Total_patient);
         Affichage_patient.add(total_panel, BorderLayout.NORTH);
         
+        this.addTab("Ajout/Suppression", ajout_patient);
 
+        this.addTab("Recherche", recherche_patient);
 
     }
-
 }

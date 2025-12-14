@@ -1,4 +1,4 @@
-package com.gestion_cabinet_medical.couche_presentation;
+package com.gestion_cabinet_medical.couche_presentation.Médecin;
 
 import javax.swing.*;
 import  java.awt.*;

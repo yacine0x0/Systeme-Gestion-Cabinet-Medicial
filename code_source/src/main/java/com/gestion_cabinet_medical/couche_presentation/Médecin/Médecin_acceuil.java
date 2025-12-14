@@ -1,7 +1,8 @@
-package com.gestion_cabinet_medical.couche_presentation;
+package com.gestion_cabinet_medical.couche_presentation.Médecin;
 
 import javax.swing.*;
 
+import com.gestion_cabinet_medical.couche_presentation.Aide_pane;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -49,6 +50,7 @@ public class Médecin_acceuil extends JFrame {
         Aide_tabs = new Aide_pane();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Clinica Pro");
         getContentPane().setLayout(new BorderLayout());
 
         // ---------------- LEFT MENU ----------------
