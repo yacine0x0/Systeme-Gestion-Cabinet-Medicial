@@ -28,7 +28,6 @@ public class Authentification {
     File file = new File(getRuntimePath("pass.txt"));
     boolean nom_valid = false,prenom_valid = false,password_valid=false;
     String input = "";
-    int count_users = 0;
 
     try {
         Scanner scan = new Scanner(file);
@@ -64,8 +63,9 @@ public class Authentification {
 
             }
 
-
+            
         }
+        scan.close();
 
 
     } catch (FileNotFoundException e) {

@@ -26,42 +26,7 @@ public class Couche_données {
         }
     }
 
-    public boolean ajoutPersonne(int idPersonne, String typePersonne, String nom, String prenom, int age, String sexe, String groupeSanguin, String adresse, String tel){
-        
-        String query = "INSERT INTO Personne (idPersonne, typePersonne, nom, prenom, age, sexe, groupeSanguin, adresse, tel) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
-        try (
-            
-            Connection con = DriverManager.getConnection(url, user, password);
-             PreparedStatement pst = con.prepareStatement(query)) {
-
-            pst.setInt(1, idPersonne);
-            pst.setString(2, typePersonne);
-            pst.setString(3, nom);
-            pst.setString(4, prenom);
-            pst.setInt(5, age);
-            pst.setString(6, sexe);
-            pst.setString(7, groupeSanguin);
-            pst.setString(8, adresse);
-            pst.setString(9, tel);
-
-            int rowsAffected = pst.executeUpdate();
-            pst.close();
-           con.close();
-
-           if (rowsAffected>0) {
-            return true;
-           }
-
-           else  { return  false;}
-
-          
-
-        } catch (SQLException ex) {
-            System.out.println(ex.getMessage());
-            return false;
-        }
-
-    }
+   
 
     public boolean ajoutOrdonnance(int numOrdo, int idMedecin,int idPatient, String details, String datePresc){
 

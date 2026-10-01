@@ -4,22 +4,24 @@ public class Personne {
     protected int    id_personne ;
     protected String nom;
     protected String prenom;
-    protected int    age;
+    protected String dateNaissance;
+    protected int   age;
     protected String sexe;
     protected String Groupe_sanguin;
     protected String adresse;
-    protected int    tel;
+    protected String    tel;
     protected static int countID = 0;
     
     public Personne() {
         countID++;
         this.id_personne = countID;
     }
-    public Personne( String nom, String prenom, int age, String sexe, String groupe_sanguin, String adresse, int tel) {
+    public Personne( String nom, String prenom, String dateNaissance ,int age, String sexe, String groupe_sanguin, String adresse, String tel) {
         countID++;
         this.id_personne = countID;
         this.nom = nom;
         this.prenom = prenom;
+        this.dateNaissance = dateNaissance;
         this.age = age;
         this.sexe = sexe;
         this.Groupe_sanguin = groupe_sanguin;
@@ -37,6 +39,9 @@ public class Personne {
     public String getPrenom() {
         return prenom;
     }
+    public String getdateNaissance(){
+        return dateNaissance;
+    }
     public int getAge() {
         return age;
     }
@@ -49,16 +54,22 @@ public class Personne {
     public String getAdresse() {
         return adresse;
     }
-    public int getTel() {
+    public String getTel() {
         return tel;
     }
 
     //setters
+    public void setID(int id){
+        this.id_personne = id;
+    }
     public void setNom(String nom) {
         this.nom = nom;
     }
     public void setPrenom(String prenom) {
         this.prenom = prenom;
+    }
+    public void setdateNaissance(String date){
+        this.dateNaissance = date;
     }
     public void setAge(int age) {
         this.age = age;
@@ -72,7 +83,7 @@ public class Personne {
     public void setAdresse(String adresse) {
         this.adresse = adresse;
     }
-    public void setTel(int tel) {
+    public void setTel(String tel) {
         this.tel = tel;
     }
     

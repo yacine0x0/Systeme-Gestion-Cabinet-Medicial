@@ -7,8 +7,8 @@ public class Réceptionniste extends Personne{
     public Réceptionniste() {
         super();
     }
-    public Réceptionniste(String nom, String prenom, int age, String sexe, String groupe_sanguin, String adresse, int tel) {
-        super(nom, prenom, age, sexe, groupe_sanguin, adresse, tel);
+    public Réceptionniste(String nom, String prenom,String date ,int age, String sexe, String groupe_sanguin, String adresse, String tel) {
+        super(nom,prenom,date,age,sexe,groupe_sanguin,adresse,tel);
     }
     public String getMot_de_passe() {
         return mot_de_passe;

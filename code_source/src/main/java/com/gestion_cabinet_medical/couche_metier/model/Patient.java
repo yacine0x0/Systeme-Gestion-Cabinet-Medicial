@@ -6,8 +6,8 @@ public class Patient extends Personne {
         super();
     }
 
-    public Patient(String nom, String prenom, int age, String sexe, String groupe_sanguin, String adresse, int tel) {
-        super(nom, prenom, age, sexe, groupe_sanguin, adresse, tel);
+    public Patient(String nom, String prenom,String date ,int age, String sexe, String groupe_sanguin, String adresse, String tel) {
+        super(nom,prenom,date,age,sexe,groupe_sanguin,adresse,tel);
     }
 
     // -------------Facture------------- //
